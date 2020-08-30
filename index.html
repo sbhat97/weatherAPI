@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Weather Dashboard </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Use this site to check the weather forecast.">
+  <meta name = "author" content="Shweta Bhat">
+  <link rel="stylesheet" href= "bootstrap.min.css"/>
+  <link rel="stylesheet" href= "style.css"/>
+  <script src="https://kit.fontawesome.com/7d24732bf0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Weather API</h1>
+  </header>
+  <div id=allContent>
+      <section id=inputs>
+      <div class="input-group md-form form-sm form-2 pl-0">
+          <input id="entry" type="text" placeholder="Search" aria-label="Search">
+          <div id= "searchBtn" class="input-group-append">
+            <span class="input-group-text btn" id="searchIcon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+      </div>
+      <ul id=citiesDisplayed style="list-style-type:none">
+        <li id="1">
+          Atlanta
+        </li>
+      </ul>
+    </section>
+
+  <div id=weatherContent>
+    <section id=forecastToday>
+      <h1 id="cityName">Atlanta<h1>
+      <h3>Today's Weather</h3>
+      <h4 id="temp">Temperature: </h4>
+      <h4 id="windSpeed">Wind Speed: </h4>
+      <h4 id = "hum">Humidity: </h4>
+    </section>
+    <section id=forecastWeek>
+      <div id=dayTwo>
+        <h4>Day 2</h4>
+        <h6 id="dayTwoTemp">Temperature: </h6>
+        <h6 id="dayTwoWind">Wind Speed: </h6>
+        <h6 id="dayTwoHum">Humidity: </h6>
+      </div>
+      <div id=dayThree>
+        <h4>Day 3</h4>
+        <h6 id="dayThreeTemp">Temperature: </h6>
+        <h6 id="dayThreeWind">Wind Speed: </h6>
+        <h6 id="dayThreeHum">Humidity: </h6>
+      </div>
+      <div id=dayFour>
+        <h4>Day 4</h4>
+        <h6 id="dayFourTemp">Temperature: </h6>
+        <h6 id="dayFourWind">Wind Speed: </h6>
+        <h6 id="dayFourHum">Humidity: </h6>
+      </div>
+      <div id=dayFive>
+        <h4>Day 5</h4>
+        <h6 id="dayFiveTemp">Temperature: </h6>
+        <h6 id="dayFiveWind">Wind Speed: </h6>
+        <h6 id="dayFiveHum">Humidity: </h6>
+      </div>
+    </section>
+  </div>
+
+
+  </div>
+  <script src = "main.js"></script>
+</body>

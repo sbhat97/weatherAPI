@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  font-family: VTahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  background-color:#000;
+}
+
+header {
+  padding: 1%;
+  margin-bottom:2%;
+  color: #FFF;
+  background-color:#0080FF79 !important;
+}
+
+
+#allContent{
+  display:flex;
+}
+#weatherContent{
+  display:block;
+  width:70%;
+}
+#forecastWeek{
+  display:flex;
+}
+
+ul{
+  color:#FFFFFF;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+li{
+  padding: 2%;
+}
+
+#inputs, #forecastToday,#dayTwo,#dayThree,#dayFour,#dayFive{
+  margin-left: 3%;
+  border-style: solid;
+  border-color:#0080FF;
+  border-width:thick;
+  border-radius: 5px;
+}
+
+#forecastToday,#dayTwo,#dayThree,#dayFour,#dayFive{
+background-color:#FFF !important;
+color:#000;
+}
+/*search bar beginning*/
+.pl-0, .px-0{
+  padding-left: 15% !important;
+  margin-top:5%;
+}
+
+a:not([href]){
+  color:#FFF
+}
+
+#searchIcon {
+  background-color: #008000;
+  color: #FFFFFF;
+}
+button, input, optgroup, select, textarea {
+  width:60%;
+}
+/*search bar end*/
+#inputs{
+  /*height:500px;*/
+  margin-right:1%;
+}
+ul {
+  margin-top:2%;
+  padding-inline-start: 0px;
+}
+
+h6{
+  text-align: left;
+}
+#forecastToday h4{
+  text-align: left;
+}
+#forecastToday{
+  /*width: 700px;*/
+}
+
+#forecastWeek {
+  margin-top:2%;
+}
+#dayTwo,#dayThree,#dayFour,#dayFive{
+  padding:2%;
+  /*height:200px;*/
+}
