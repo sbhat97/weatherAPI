@@ -2,8 +2,8 @@
 let citySearched = 'Atlanta'
 
 //define funtion to use API:
-let weatherURL = 'http://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=38c15afc59b4cd327299f2d9a2f11807'
-let weatherURLfour = 'http://api.openweathermap.org/data/2.5/forecast?q=Atlanta&appid=38c15afc59b4cd327299f2d9a2f11807'
+let weatherURL = 'https://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=38c15afc59b4cd327299f2d9a2f11807'
+let weatherURLfour = 'https://api.openweathermap.org/data/2.5/forecast?q=Atlanta&appid=38c15afc59b4cd327299f2d9a2f11807'
 let weatherData
 let weatherDatafour
 var list
