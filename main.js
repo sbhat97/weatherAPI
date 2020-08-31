@@ -163,7 +163,7 @@ window.addEventListener('keypress', function(e){
   if (valPressed == 13 && getFocus === document.activeElement){
     //call API function here
     citySearched = document.getElementById("entry").value;
-    let weatherURL = ('http://api.openweathermap.org/data/2.5/weather?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
+    let weatherURL = ('https://api.openweathermap.org/data/2.5/weather?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
     $.ajax({
       url: weatherURL,
       type:"GET",
@@ -174,7 +174,7 @@ window.addEventListener('keypress', function(e){
       }
     })
 
-    let weatherURLfour = ('http://api.openweathermap.org/data/2.5/forecast?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
+    let weatherURLfour = ('https://api.openweathermap.org/data/2.5/forecast?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
     $.ajax({
       url: weatherURLfour,
       type:"GET",
@@ -186,7 +186,7 @@ window.addEventListener('keypress', function(e){
         //addCity(citySearched)
       }
     })
-  //weatherURL = 'http://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=38c15afc59b4cd327299f2d9a2f11807'
+  //weatherURL = 'https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=38c15afc59b4cd327299f2d9a2f11807'
   //call function to add to ul list
 }
 })
@@ -199,7 +199,7 @@ document.getElementById("searchIcon").addEventListener('click', function(){
 })
 
 function getCityWeather(citySearched){
-  let weatherURL = ('http://api.openweathermap.org/data/2.5/weather?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
+  let weatherURL = ('https://api.openweathermap.org/data/2.5/weather?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
   $.ajax({
     url: weatherURL,
     type:"GET",
@@ -209,7 +209,7 @@ function getCityWeather(citySearched){
       addCity(citySearched)
     }
   })
-  let weatherURLfour = ('http://api.openweathermap.org/data/2.5/forecast?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
+  let weatherURLfour = ('https://api.openweathermap.org/data/2.5/forecast?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
   $.ajax({
     url: weatherURLfour,
     type:"GET",
@@ -224,7 +224,7 @@ function getCityWeather(citySearched){
   document.getElementById("1").addEventListener('click', function(){
     //call API function here (update citySearched and weatherURL)
     citySearched = document.getElementById("1").innerHTML;
-    let weatherURL = ('http://api.openweathermap.org/data/2.5/weather?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
+    let weatherURL = ('https://api.openweathermap.org/data/2.5/weather?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
     $.ajax({
       url: weatherURL,
       type:"GET",
@@ -234,7 +234,7 @@ function getCityWeather(citySearched){
         addCity(citySearched)
       }
     })
-    let weatherURLfour = ('http://api.openweathermap.org/data/2.5/forecast?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
+    let weatherURLfour = ('https://api.openweathermap.org/data/2.5/forecast?q='+ citySearched +'&appid=38c15afc59b4cd327299f2d9a2f11807')
     $.ajax({
       url: weatherURLfour,
       type:"GET",
